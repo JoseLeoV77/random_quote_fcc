@@ -1,0 +1,63 @@
+body{
+    background-color: #222;
+}
+.background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+#quote-box{
+    display: flex;
+    min-width: 45dvh;
+    max-width: 55dvh;
+    height: 50dvh;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;  
+    background-color: #ffffff;
+    color:black;  
+    border: none;
+    border-radius: 10px;
+}
+
+.content-box{
+    margin:10%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#author{
+    margin-left: 60%;
+    align-self:center;
+    font-size: medium;
+}
+
+.tw-tblr-quotes{
+    display: flex;
+    gap:12px
+}
+
+#tweet-quote, #tumblr-quote, #new-quote{
+    height: 40px;
+    background-color: hsla(197, 83%, 56%, 0.473);
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#tweet-quote, #tumblr-quote{
+    align-content: center;
+}
+
+#tweet-quote:hover, #tumblr-quote:hover, #new-quote:hover{
+    background-color: hsla(197, 66%, 35%, 0.678);
+}
+

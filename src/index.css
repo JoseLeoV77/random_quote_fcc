@@ -1,0 +1,8 @@
+#root{ 
+    margin:50px;
+    width: 100dvh;
+    height: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
