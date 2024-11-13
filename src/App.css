@@ -15,9 +15,9 @@ body{
 
 #quote-box{
     display: flex;
-    min-width: 45dvh;
-    max-width: 55dvh;
-    height: 50dvh;
+    min-width: 35vh;
+    max-width: 55vh;
+    height: 50vh;
     flex-direction:column;
     align-items: center;
     justify-content: center;  

@@ -5,6 +5,8 @@ import "./App.css"
 
 export function App (){
     let randomNum = Math.floor(Math.random() * quotes.length)
+    const [rNum, updateOnClick] = useState(randomNum)
+    
     const color1 = Math.floor(Math.random() * 128)
     const color2 = Math.floor(Math.random() * 128)
     const color3 = Math.floor(Math.random() * 128)
@@ -13,10 +15,10 @@ export function App (){
     
 
     const handleClick = () => {
-        updateOnClick(randomNum)
+        updateOnClick(Math.floor(Math.random() * quotes.length))
     }
 
-    const {quote, author} = quotes[randomNum]
+    const {quote, author} = quotes[rNum]
 
 
 
@@ -24,7 +26,7 @@ export function App (){
         <div className="background" style={{backgroundColor:randomColor, transitionDuration:"2s"}}>
             <div id="quote-box">
                 <div className="content-box">
-                    <p id="text" style={{color:randomColor}}>"{quote}"</p>
+                    <p id="text" style={{color:randomColor}}>`{quote}`</p>
                 </div>
                 <h2 id="author" style={{color:randomColor}}>-{author}</h2>
                 <div className="tw-tblr-quotes">
