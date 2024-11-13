@@ -4,10 +4,6 @@ import { useState } from "react"
 import "./App.css"
 
 export function App (){
-
-    const [state, updateOnClick] = useState(false)
-    
-
     let randomNum = Math.floor(Math.random() * quotes.length)
     const color1 = Math.floor(Math.random() * 128)
     const color2 = Math.floor(Math.random() * 128)

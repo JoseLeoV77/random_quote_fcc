@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/random_quote_fcc/",
   plugins: [react()],
-  base: "/random_quote_fcc/"
 })
